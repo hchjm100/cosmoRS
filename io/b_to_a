@@ -1,0 +1,2 @@
+io_tipsy.c:  fprintf(stderr, "[Warning] Rockstar is skipping TIPSY gas and star particles and calculating halos from dark matter only.  If this is not what you want, inquire with the authors about Rockstar-Galaxies.\n");
+Binary file io_tipsy.o matches
