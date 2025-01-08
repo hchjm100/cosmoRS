@@ -1,0 +1,34 @@
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/conv_xs3_r400_v10_pm32c70x10v2/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/inc_xs3_r400_v10_pm32c18/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/fdrH18_xs3_r400_v14_pm32c70/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runDY_cdm_r400_v10_hn32c90/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runDY_cdm_r400_v10_hn32c70/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runDY_xs5_r400_v10_hn32c90/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runDY_xs3_r400_v10_hn32c70/rH144_output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_rhoCore_nosidm_validation/output/snapshot_%.3d",ifile);
+
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_rhoCore_nosidm_validation_small/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_rhoCore_nosidm_validation_small/smop/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_rhoCore_sidm_validation_small/small_output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runCL_sidm_re10/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_core/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_corevalid_treePM/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_corevalid/10M_output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_corevalid/1Moutput/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_cusp/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round2_core_cutmain/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_cusp_haloOnly/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_hydrostatic/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runCL_sidm_re10/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_round3_cusp_vac1e16/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runOgiya_huor_rp1d5/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runDY_findBM_core/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/storage/Users/yangdn/ngc1052/runDY_findBM_core_sidm3/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r580_v16_ms36/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r540_v12_ms36/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r400_v10_hn26M1/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r400_v10_hn26/sm_output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r400_v10_hn26/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_sidm3_r400_v10_hn26x20/output/snapshot_%.3d",ifile);
+      //sprintf(filename[ifile],"/home/mpirun/workspace/ngc1052DY/runBM_cdm_r400_v10_hn26/output/snapshot_%.3d",ifile);
+

@@ -1,0 +1,75 @@
+io_internal.c:  bh->magic = ROCKSTAR_MAGIC;
+io_internal.c:  bh->snap = snap;
+io_internal.c:  bh->chunk = chunk;
+io_internal.c:  bh->scale = SCALE_NOW;
+io_internal.c:  bh->Om = Om;
+io_internal.c:  bh->Ol = Ol;
+io_internal.c:  bh->h0 = h0;
+io_internal.c:  bh->box_size = BOX_SIZE;
+io_internal.c:  bh->particle_mass = PARTICLE_MASS;  
+io_internal.c:  snprintf(bh->rockstar_version, VERSION_MAX_SIZE, "%s", ROCKSTAR_VERSION);
+io_internal.c:  bh->format_revision = HALO_FORMAT_REVISION;
+io_internal.c:  SCALE_NOW = bh->scale;
+io_internal.c:  Om = bh->Om;
+io_internal.c:  Ol = bh->Ol;
+io_internal.c:  h0 = bh->h0;
+io_internal.c:  BOX_SIZE = bh->box_size;
+io_internal.c:  PARTICLE_MASS = bh->particle_mass;
+io_tipsy.c:    if (!xdr_double(pxdrs,&ph->time)) return 0;
+io_tipsy.c:    if (!xdr_int(pxdrs,&ph->nbodies)) return 0;
+io_tipsy.c:    if (!xdr_int(pxdrs,&ph->ndim)) return 0;
+io_tipsy.c:    if (!xdr_int(pxdrs,&ph->nsph)) return 0;
+io_tipsy.c:    if (!xdr_int(pxdrs,&ph->ndark)) return 0;
+io_tipsy.c:    if (!xdr_int(pxdrs,&ph->nstar)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->mass)) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->pos[i])) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->vel[i])) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->rho)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->temp)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->hsmooth)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->metals)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->phi)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->mass)) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->pos[i])) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->vel[i])) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->eps)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->phi)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->mass)) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->pos[i])) return 0;
+io_tipsy.c:    for(i=0; i<TIPSY_MAXDIM; i++) if (!xdr_float(pxdrs,&ph->vel[i])) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->metals)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->tform)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->eps)) return 0;
+io_tipsy.c:    if (!xdr_float(pxdrs,&ph->phi)) return 0;
+meta_io.c:  for (i=0; i<3; i++) if (h->pos[i]<bounds[i]||h->pos[i]>bounds[i+3]) return 0;
+meta_io.c:  if (h->flags & ALWAYS_PRINT_FLAG) return 1;
+meta_io.c:  if ((h->num_p < MIN_HALO_OUTPUT_SIZE) ||
+meta_io.c:      (h->m * UNBOUND_THRESHOLD >= h->mgrav) ||
+meta_io.c:      ((h->mgrav < 1.5*PARTICLE_MASS) && UNBOUND_THRESHOLD > 0)) return 0;
+meta_io.c:	    th->num_p, th->m, th->mgrav, th->r,	th->vmax, th->rvmax, th->vrms,
+meta_io.c:	    th->pos[0], th->pos[1], th->pos[2], th->pos[3], th->pos[4],
+meta_io.c:	    th->pos[5], th->J[0], th->J[1], th->J[2], th->energy, th->spin,
+meta_io.c:	    sqrt(th->min_pos_err), sqrt(th->min_vel_err), th->bulkvel[0],
+meta_io.c:	    th->bulkvel[1], th->bulkvel[2], sqrt(th->min_bulkvel_err),
+meta_io.c:	    th->n_core, th->alt_m[0], th->alt_m[1], th->alt_m[2], th->alt_m[3], 
+meta_io.c:	    th->Xoff, th->Voff, th->bullock_spin, th->b_to_a, th->c_to_a,
+meta_io.c:	    th->A[0], th->A[1], th->A[2], th->b_to_a2, th->c_to_a2,
+meta_io.c:	    th->A2[0], th->A2[1], th->A2[2], th->rs, th->klypin_rs, th->kin_to_pot,
+meta_io.c:	    th->m_pe_b, th->m_pe_d,
+meta_io.c:	    i, extra_info[i].sub_of, extra_info[i].ph, th->num_child_particles, extra_info[i].max_metric);
+meta_io.c:      th->id = id+id_offset;
+meta_io.c:    } else { th->id = -1; }
+meta_io.c:	    " %f %f %f %f %f %f %f %f %f %f %g %g %g %g %g\n", th->id, i,
+meta_io.c:	    th->num_p, th->m, th->mgrav, th->r, th->vmax, th->rvmax, th->vrms,
+meta_io.c:	    th->pos[0], th->pos[1], th->pos[2], th->pos[3], th->pos[4],
+meta_io.c:	    th->pos[5], th->J[0], th->J[1], th->J[2], th->energy, th->spin);
+meta_io.c:    if (LIGHTCONE) for (j=0; j<3; j++) th->pos[j] -= LIGHTCONE_ORIGIN[j];
+meta_io.c:    m = (BOUND_PROPS) ? th->mgrav : th->m;
+meta_io.c:	    th->id, th->desc, m, th->vmax, th->vrms, th->r, th->rs,
+meta_io.c:	    th->num_p, th->pos[0], th->pos[1], th->pos[2], th->pos[3],
+meta_io.c:	    th->pos[4], th->pos[5], th->J[0], th->J[1], th->J[2], th->spin,
+meta_io.c:	    th->klypin_rs, th->m, th->alt_m[0], th->alt_m[1], th->alt_m[2],
+meta_io.c:	    th->alt_m[3], th->Xoff, th->Voff, th->bullock_spin, th->b_to_a,
+meta_io.c:	    th->c_to_a, th->A[0], th->A[1], th->A[2], th->b_to_a2, th->c_to_a2,
+meta_io.c:	    th->A2[0], th->A2[1], th->A2[2], th->kin_to_pot, 
+meta_io.c:	    th->m_pe_b, th->m_pe_d);
