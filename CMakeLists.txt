@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(cosmoAnalysis C)
+project(cosmoRS C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -11,20 +11,8 @@ include_directories(scripts)
 include_directories(util)
 include_directories(ZXY_module)
 
-## Automatically collect all .h and .c files
-#file(GLOB PROJECT_HEADERS "RS/*.h")
-#file(GLOB PROJECT_SOURCES "RS/*.c")
-#
-## Add them to your executable or library
-#add_executable(cosmoAnalysis ${PROJECT_HEADERS} ${PROJECT_SOURCES}
-#        ../Gadget-2/cosmoRS/scripts/runsingle.c)
-
-
-#add_executable(cosmoAnalysis
-#        main.c)
-
 # Updated source and header files
-add_executable(cosmoAnalysis
+add_executable(cosmoRS
     commands/count_CDM760.c
     commands/count_presim.c
     commands/mvfile.c
