@@ -24,7 +24,7 @@ inline double _distance2(float *p1, float *p2) {
 inline double inv_distance(float *p1, float *p2) {
   double r = sqrt(_distance2(p1,p2));
   // todo
-  // If r < 170 pc, r = 170 pc
+  // If r < 100 pc, r = 100 pc
   if (r < FORCE_RES) r = FORCE_RES;
   return (1.0/r);
 }
