@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/cmake-build-debug"
+			"value" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis"
+			"value" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -771,7 +771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "cosmoAnalysis"
+			"value" : "cosmoRS"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1070,7 +1070,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "cosmoAnalysis_BINARY_DIR",
+			"name" : "cosmoRS_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1079,10 +1079,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/cmake-build-debug"
+			"value" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/cmake-build-debug"
 		},
 		{
-			"name" : "cosmoAnalysis_IS_TOP_LEVEL",
+			"name" : "cosmoRS_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1094,7 +1094,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "cosmoAnalysis_SOURCE_DIR",
+			"name" : "cosmoRS_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1103,7 +1103,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis"
+			"value" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS"
 		}
 	],
 	"kind" : "cache",

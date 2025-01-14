@@ -49,6 +49,8 @@ static  double M_d4 = 0.12e10,     a_d4 = 1.5,    b_d4 = 0.045;
 static  double M_Hern = 0.923e10,   r_Hern = 1.3;
 static  double rhos_NFW = 8.54e6,  rs_NFW = 19.6;
 
+// todo
+// part of external potential, paper?
 double phi_MW(double x, double y, double z){
 
   double rad_ZXY = sqrt( x*x + y*y + z*z );

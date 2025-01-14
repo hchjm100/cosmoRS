@@ -5,10 +5,15 @@
 #define POTENTIAL_DONT_CALCULATE_FLAG 1
 
 struct potential {
+    // todo
+    /* pos[0-2]: position of potential ?
+     * pos[3-5]: velocity of potential ?
+     * r2: (distance between paticle and center point)^2
+     * */
   float pos[6], r2;
-  double pe;
-  float ke;
-  int32_t type;
+  double pe; // potential ?
+  float ke; // kinetic energy ?
+  int32_t type; // todo: particle type ? definition of different typies
   int32_t flags;
 
   /*The following fields are not included for the main halo finder. */

@@ -23,6 +23,8 @@ inline double _distance2(float *p1, float *p2) {
 
 inline double inv_distance(float *p1, float *p2) {
   double r = sqrt(_distance2(p1,p2));
+  // todo
+  // If r < 170 pc, r = 170 pc
   if (r < FORCE_RES) r = FORCE_RES;
   return (1.0/r);
 }
@@ -187,6 +189,7 @@ void compute_kinetic_energy(struct potential *po, int64_t num_po, float *vel_cen
     for (j=0; j<3; j++) { 
       dv = po[i].pos[j+3]-vel_cen[j]; // + hubble*SCALE_NOW*(po[i].pos[j]-pos_cen[j]);
       //ZXY 2022/01/20: Revised from vel_cen[j]-po[i].pos[j+3] + ... to above equation ......
+      // todo: peculiar velocity is velocity relative to the rest frame?
       // ZXY 2023.05.14: Consider only the peculiar velocity ......
       po[i].ke+=dv*dv; 
     }

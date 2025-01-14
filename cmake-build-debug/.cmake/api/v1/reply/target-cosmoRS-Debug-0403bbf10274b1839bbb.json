@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "cosmoAnalysis"
+			"path" : "cosmoRS"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -85,31 +85,31 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/commands"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/commands"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/examples"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/examples"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/inet"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/inet"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/io"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/io"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/scripts"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/scripts"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/util"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/util"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/ZXY_module"
+					"path" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/ZXY_module"
 				}
 			],
 			"language" : "C",
@@ -208,7 +208,7 @@
 			]
 		}
 	],
-	"id" : "cosmoAnalysis::@6890427a1f51a3e7e1df",
+	"id" : "cosmoRS::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -224,8 +224,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "cosmoAnalysis",
-	"nameOnDisk" : "cosmoAnalysis",
+	"name" : "cosmoRS",
+	"nameOnDisk" : "cosmoRS",
 	"paths" : 
 	{
 		"build" : ".",

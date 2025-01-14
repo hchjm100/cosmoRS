@@ -480,22 +480,32 @@ int main(int argc, char *argv[]){
         dv2 = dvx*dvx + dvy*dvy + dvz*dvz;
         pot[j].r2 = r2;
 
+        // todo
+        // '/1000': convert to kpc?
         SELF_PE += - ( All_G * PART_MASS_ZXY[pot[j].type] * pot[j].pe / 1000 );
         EXT_PE += PART_MASS_ZXY[pot[j].type] * phi_MW(1000*pot[j].pos[0], 1000*pot[j].pos[1], 1000*pot[j].pos[2]);
 
         SELF_KE += 0.5 * PART_MASS_ZXY[pot[j].type] * dv2;
         double v2_ZXY = 0;
+        // todo
+        // v2_ZXY: (absolute velocity of the particle)^2
+        // dv2: (relative velocity of the particle based on the center point)^2
         for(k=0; k<3; k++){ v2_ZXY += pot[j].pos[k+3]*pot[j].pos[k+3]; }
         TOTAL_KE += 0.5 * PART_MASS_ZXY[pot[j].type] * v2_ZXY;
+        // todo
+        // pot[j].ke: self kinetic energy
+        // pot[j].pe: self potential
+        // only for dark matter: BOUND_PE = SELF_PE, BOUND_KE = SELF_KE
         if(pot[j].ke < pot[j].pe){
           BOUND_PE += - ( All_G * PART_MASS_ZXY[pot[j].type] * pot[j].pe / 1000 );
           BOUND_KE += 0.5 * PART_MASS_ZXY[pot[j].type] * dv2;
         }
 
-	// r^2 < (10pc)^2
+	    // r^2 < (10pc)^2
         if( (pot[j].type == 1 || pot[j].type == 2) && r2 < 10*10*1e-12 && pot[j].ke < pot[j].pe )
           {fprintf(fdmp,"%f  %f  %d  %f  %f  %f  %f  %f  %f  \n", 1000*sqrt(r2) , 0.5 * dv2 , pot[j].id, dx, dy, dz, dvx, dvy, dvz);}
-        else if( (pot[j].type == 4) && r2 < 8*8*1e-6 && pot[j].ke < pot[j].pe )
+        // r^2 < (10pc)^2
+        else if( (pot[j].type == 4) && r2 < 10*10*1e-6 && pot[j].ke < pot[j].pe )
           {fprintf(fstp,"%f  %f  %d  %f  %f  %f  %f  %f  %f  \n", 1000*sqrt(r2) , 0.5 * dv2 , pot[j].id, dx, dy, dz, dvx, dvy, dvz);}
       }
 
@@ -517,6 +527,10 @@ int main(int argc, char *argv[]){
         if(pot[j].r2 < 1.066*1.066*1e-6 && pot[j].ke < pot[j].pe && pot[j].type != 4)
 	{
           npdm_Rh += 1;
+          // todo
+          /* distance < 10 pc
+           * npdm_10: # of '< 10 pc'
+           * */
           if(pot[j].r2 < 0.01*0.01*1e-6){npdm_10 += 1.0;}
 	  if(pot[j].r2 < 0.02*0.02*1e-6){npdm_20 += 1.0;}
           if(pot[j].r2 < 0.05*0.05*1e-6){npdm_50 += 1.0;}
@@ -1168,7 +1182,24 @@ if(ifile==0) printf("#time rhoh rhos phase x y z corevx corevy corevz h_bulkvelx
 
       float r2sq = sqrt( cen[0]*cen[0] + cen[1]*cen[1] + cen[2]*cen[2] );
 
-      fprintf(boundmass, "%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f\n", time_snap, h->mgrav, mdm_Rh, cen[0], cen[1], cen[2], r2sq, SELF_PE, SELF_KE, TOTAL_PE, TOTAL_KE, mdm_10, mdm_20, mdm_50, BOUND_PE, BOUND_KE);
+      // todo
+       /* time_snap: (the snapshot_#) * 0.2
+        * h->mgrav: bound mass ?
+        * mdm_Rh:
+        * cen[0-2]: position with potential minimum; cen[3-5]: velocity with potential minimum ?
+        * r2sq: distance^2
+        * SELF_PE: potential ?
+        * SELF_KE: kinetic energy ?
+        * TOTAL_PE: SELF_PE + EXT_PE
+        * TOTAL_KE: sum over kinetic energy of particles without far away with the halo.
+        *           TOTAL_KE = relative kinetic energy based on center point + absolute kinetic energy ?
+        * mdm_x: the total masses of particles whose distance < (x pc)
+        * BOUND_PE: bound potential = self potential ?
+        * BOUND_KE: bound kinetic energy = self kinetic energy ?
+        * */
+      fprintf(boundmass, "%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f\n",
+              time_snap, h->mgrav, mdm_Rh, cen[0], cen[1], cen[2], r2sq, SELF_PE, SELF_KE, TOTAL_PE, TOTAL_KE, mdm_10,
+              mdm_20, mdm_50, BOUND_PE, BOUND_KE);
 
       fclose(boundmass);
       printf("ZXY: bound mass recorded ..........\n\n");
