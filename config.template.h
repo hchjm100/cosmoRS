@@ -13,7 +13,7 @@ string(MASS_DEFINITION4, "200c");
 string(MASS_DEFINITION5, "200c");
 integer(STRICT_SO_MASSES, 0);
 integer(MIN_HALO_OUTPUT_SIZE, 20);
-real(FORCE_RES, 0.00017); //In Mpc/h, 170 pc
+real(FORCE_RES, 0.0001); //In Mpc/h, 100 pc
 real(FORCE_RES_PHYS_MAX, 0);
 
 real(SCALE_NOW, 1.0);

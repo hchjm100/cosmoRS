@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "__availability": "c",
+        "complex": "c",
+        "*.tcc": "c",
+        "cctype": "c",
+        "clocale": "c",
+        "cmath": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "cstring": "c",
+        "ctime": "c",
+        "cwchar": "c",
+        "cwctype": "c",
+        "functional": "c"
+    }
+}
