@@ -101,8 +101,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis/cmake-build-debug",
-		"source" : "/Users/sanghaoyu/CLionProjects/cosmoAnalysis"
+		"build" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS/cmake-build-debug",
+		"source" : "/Users/sanghaoyu/CLionProjects/Gadget-2/cosmoRS"
 	},
 	"version" : 
 	{
